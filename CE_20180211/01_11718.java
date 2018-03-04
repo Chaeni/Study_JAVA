@@ -5,7 +5,7 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 		String string = "";
         
-        while(input.hasNextLine()){
+        while(input.hasNextLine()){ // if next string exists
             string = input.nextLine();
 			System.out.println(string);
         }
