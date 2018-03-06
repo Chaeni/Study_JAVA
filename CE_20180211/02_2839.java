@@ -13,23 +13,23 @@ public class Main {
 		rest = n%5;
 		
 		while(true) {
-			if(rest%3 == 0) {
+			if(rest%3 == 0) { // if it's possible to divide rest by 3 pefectly
 				portion = portion + rest/3;
 				rest = rest%3;
 				break;
 			}
 			else if(rest != 0) {
-				if(portion > 0) {
+				if(portion > 0) { // if portion exists
 					portion --;
 					rest = rest + 5;
 					continue;
 				}
-				else {
+				else { // if portion is zero
 					portion = -1;
 					break;
 				}
 			}		
-			else if(rest == 0) {
+			else if(rest == 0) { // if rest doesn't exist
 				break;
 			}
 		}
